@@ -1,14 +1,18 @@
 import React from 'react';
-import Header from './Components/Header'; // Update path as needed
-import HeroSection from './Components/HeroSection'; // Update path as needed
+import { Routes, Route } from 'react-router-dom';
+import { Landing } from './Components/Landing';
+import { SignUp}  from './Components/Auth/SignUp';
+import Login from './Components/Auth/Login';
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <HeroSection />
-      </main>
+    <div className="">
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+       
+      </Routes>
     </div>
   );
 };

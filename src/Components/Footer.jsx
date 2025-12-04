@@ -1,239 +1,107 @@
-import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
-import logo from "../Components/Logo.png"
+import React from 'react'
+import radio from '../Components/Images/Support.png'
 
-const CryptoFooter = () => {
-  const footerSections = {
-    company: {
-      title: "Company",
-      links: [
-        "About Us",
-        "Blog",
-        "Careers",
-        "Student",
-        "Security",
-        "Trust and Safety",
-        "Newsroom",
-        "Videos"
-      ]
-    },
-    learn: {
-      title: "Learn",
-      links: [
-        "What's Trending",
-        "Product News",
-        "Events",
-        "University",
-        "Research",
-        "Market Updates"
-      ]
-    },
-    products: {
-      title: "Products",
-      links: [
-        "Stock & Fund",
-        "Cash Card",
-        "Crypto",
-        "Options",
-        "Gold",
-        "Learn Snacks"
-      ]
-    },
-    support: {
-      title: "Support",
-      links: [
-        "Support Center",
-        "Contact Us",
-        "System Status",
-        "Areas of Availability"
-      ]
-    },
-    resources: {
-      title: "Resources",
-      links: [
-        "Prices",
-        "Site Widgets",
-        "Tax",
-        "Support"
-      ]
-    }
-  };
-
+export const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-12">
-        
-      
-        <div className="lg:hidden">
-         
-          <div className="text-center mb-8 space-y-4">
-            <div className="flex justify-center">
-              <a 
-                href="/" 
-                className="hover:opacity-80 transition-opacity"
-              >
-                <img 
-                  src={logo} 
-                  alt="urCrypto Logo" 
-                  className="w-[155px] h-[38px]"
-                />
-              </a>
+    <footer className="text-white py-16 px-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Logo centered at top with radio icon on same line */}
+        <div className="flex items-center justify-between mb-12">
+          <div className="flex-1 hidden md:block"></div>
+          <h2 className="text-2xl md:text-3xl font-bold">
+            Stellar <span className="text-teal-400">Point</span>
+          </h2>
+          <div className="flex-1 flex justify-end">
+            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-teal-400 flex items-center justify-center">
+              <img 
+                src={radio} 
+                alt="support"
+                className="w-6 h-6 md:w-8 md:h-8"
+              />
             </div>
-            <p className="text-gray-600 text-base font-normal leading-6">
-              Take your crypto to the next level
-            </p>
-            
-          
-            <div className="flex justify-center space-x-3 pt-2">
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors"
-              >
-                <Facebook className="w-4 h-4 text-white" />
-              </a>
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors"
-              >
-                <Twitter className="w-4 h-4 text-white" />
-              </a>
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors"
-              >
-                <Instagram className="w-4 h-4 text-white" />
-              </a>
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors"
-              >
-                <Linkedin className="w-4 h-4 text-white" />
-              </a>
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors"
-              >
-                <Youtube className="w-4 h-4 text-white" />
-              </a>
-            </div>
-          </div>
-
-        
-          <div className="grid grid-cols-2 gap-8 mb-8">
-            {Object.entries(footerSections).map(([key, section]) => (
-              <div key={key} className="space-y-4">
-                <h3 className="text-gray-900 font-semibold text-base leading-6">
-                  {section.title}
-                </h3>
-                <ul className="space-y-3">
-                  {section.links.map((link, index) => (
-                    <li key={index}>
-                      <a 
-                        href="#" 
-                        className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-normal leading-5"
-                        style={{ fontFamily: 'Inter', letterSpacing: '0px' }}
-                      >
-                        {link}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
           </div>
         </div>
 
-        
-        <div className="hidden lg:grid lg:grid-cols-6 gap-8 lg:gap-12">
-      
-          <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center">
-              <a 
-                href="/" 
-                className="hover:opacity-80 transition-opacity"
-              >
-                <img 
-                  src={logo} 
-                  alt="urCrypto Logo" 
-                  className="h-8 w-auto"
-                />
-              </a>
+        {/* Footer columns */}
+        <div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12 max-w-4xl mx-auto">
+            {/* Services Column */}
+            <div>
+              <h3 className="text-base md:text-lg font-semibold mb-4 md:mb-6">Services</h3>
+              <ul className="space-y-2 md:space-y-3">
+                <li>
+                  <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm md:text-base">
+                    Exchange
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm md:text-base">
+                    Spot
+                  </a>
+                </li>
+              </ul>
             </div>
-            <p className="text-gray-600 text-base font-normal leading-6">
-              Take your crypto to the next level
-            </p>
-            
-           
-            <div className="flex space-x-3 pt-2">
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors"
-              >
-                <Facebook className="w-4 h-4 text-white" />
-              </a>
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors"
-              >
-                <Twitter className="w-4 h-4 text-white" />
-              </a>
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors"
-              >
-                <Instagram className="w-4 h-4 text-white" />
-              </a>
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors"
-              >
-                <Linkedin className="w-4 h-4 text-white" />
-              </a>
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors"
-              >
-                <Youtube className="w-4 h-4 text-white" />
-              </a>
-            </div>
-          </div>
 
-          
-          <div className="lg:col-span-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8">
-            {Object.entries(footerSections).map(([key, section]) => (
-              <div key={key} className="space-y-4">
-                <h3 className="text-gray-900 font-semibold text-base leading-6">
-                  {section.title}
-                </h3>
-                <ul className="space-y-3">
-                  {section.links.map((link, index) => (
-                    <li key={index}>
-                      <a 
-                        href="#" 
-                        className="text-gray-600 hover:text-gray-900 transition-colors text-base font-normal leading-6"
-                        style={{ fontFamily: 'Inter', letterSpacing: '0px' }}
-                      >
-                        {link}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            {/* Product Column */}
+            <div>
+              <h3 className="text-base md:text-lg font-semibold mb-4 md:mb-6">Product</h3>
+              <ul className="space-y-2 md:space-y-3">
+                <li>
+                  <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm md:text-base">
+                    Mobile App
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm md:text-base">
+                    Reporting APP
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Company Column */}
+            <div>
+              <h3 className="text-base md:text-lg font-semibold mb-4 md:mb-6">Company</h3>
+              <ul className="space-y-2 md:space-y-3">
+                <li>
+                  <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm md:text-base">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm md:text-base">
+                    Announcement
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Support Column */}
+            <div>
+              <h3 className="text-base md:text-lg font-semibold mb-4 md:mb-6">Support</h3>
+              <ul className="space-y-2 md:space-y-3">
+                <li>
+                  <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm md:text-base">
+                    Help Center
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm md:text-base">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-       
-        <div className="border-t border-gray-200 mt-12 pt-8">
-          <div className="text-center">
-            <p className="text-gray-500 text-base font-normal leading-6" style={{ fontFamily: 'Inter' }}>
-              ©All rights reserved.
-            </p>
-          </div>
+        {/* Copyright */}
+        <div className="border-t border-gray-800 pt-8 mt-8">
+          <p className="text-center text-gray-400 text-xs md:text-sm">
+            Copy Right 2025 Stellar Point. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>
-  );
-};
-
-export default CryptoFooter;
+  )
+}
