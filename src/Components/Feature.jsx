@@ -22,7 +22,7 @@ export const Feature = () => {
           {/* Feature Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 - Military-grade Security */}
-            <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
+            <div className="bg-[#1a1a1a] backdrop-blur-sm border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
               <div className="mb-6 h-48 flex items-center justify-center">
                 <img src={feat1} alt="Security Chart" className="w-full h-full object-contain" />
               </div>
@@ -36,7 +36,7 @@ export const Feature = () => {
             </div>
 
             {/* Card 2 - Lightning-Fast Transactions */}
-            <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
+            <div className="bg-[#1a1a1a] backdrop-blur-sm border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
               <div className="mb-6 h-48 flex items-center justify-center">
                 <img src={feat2} alt="Crypto Exchange" className="w-full h-full object-contain" />
               </div>
@@ -50,7 +50,7 @@ export const Feature = () => {
             </div>
 
             {/* Card 3 - Intelligent Investment Tools */}
-            <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
+            <div className="bg-[#1a1a1a] backdrop-blur-sm border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
               <div className="mb-6 h-48 flex items-center justify-center">
                 <img src={feat3} alt="Investment Chart" className="w-full h-full object-contain" />
               </div>
@@ -66,7 +66,7 @@ export const Feature = () => {
         </div>
 
         {/* Bottom Section - Financial Innovation */}
-        <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+        <div className="bg-[#1a1a1a] backdrop-blur-sm border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left Side - Text Content */}
             <div className="text-center lg:text-left">

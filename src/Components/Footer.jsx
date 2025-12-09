@@ -3,7 +3,7 @@ import radio from '../Components/Images/Support.png'
 
 export const Footer = () => {
   return (
-    <footer className="text-white py-16 px-6">
+    <footer className="text-white bg-[#1a1a1a] py-16 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Logo centered at top with radio icon on same line */}
         <div className="flex items-center justify-between mb-12">

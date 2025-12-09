@@ -25,7 +25,7 @@ export const Community = () => {
             </div>
             
           <div 
-  className="bg-gray-800 rounded-3xl p-6 text-center md:text-left md:p-10 flex flex-col items-center md:flex-row md:items-center justify-between gap-4 md:gap-0 w-full md:w-[160%]" 
+  className="bg-[#1a1a1a] rounded-3xl p-6 text-center md:text-left md:p-10 flex flex-col items-center md:flex-row md:items-center justify-between gap-4 md:gap-0 w-full md:w-[160%]" 
   style={{minHeight: '200px'}}
 >
   <div>

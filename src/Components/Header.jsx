@@ -138,7 +138,7 @@ export const Header = () => {
 
       {/* Stats Bar */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 sm:mt-20 lg:mt-36">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-8 bg-slate-900/50 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 border border-slate-800">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-8 bg-[#1a1a1a] backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 border border-slate-800">
           <div className="text-center lg:text-left">
             <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-1 sm:mb-2">48K+</div>
             <div className="text-gray-400 text-xs sm:text-sm">Active investors</div>

@@ -45,8 +45,8 @@ export const Frequent = () => {
               key={index}
               className={`rounded-2xl transition-all duration-300 w-full md:w-[95%] ${
                 openIndex === index
-                  ? 'bg-slate-800 border-2 border-cyan-400'
-                  : 'bg-slate-800/50 border-2 border-transparent'
+                  ? 'bg-[#1a1a1a] border-2 border-cyan-400'
+                  : 'bg-[#1a1a1a] border-2 border-transparent'
               } ${
                 index % 2 === 0 ? 'md:mr-0 md:ml-auto' : 'md:ml-0 md:mr-auto'
               }`}

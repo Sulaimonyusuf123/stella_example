@@ -76,7 +76,7 @@ export const Market = () => {
         </div>
         
         {/* Table Container */}
-        <div className="bg-slate-900/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-800">
+        <div className="bg-[#1a1a1a] backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-800">
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
