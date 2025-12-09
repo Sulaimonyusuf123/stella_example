@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Eye, EyeOff, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   const [activeTab, setActiveTab] = useState('email');
@@ -37,12 +38,14 @@ export default function Login() {
       </div>
 
       <div className="w-full max-w-md relative z-10">
-        {/* Logo */}
+       {/* Logo */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold">
-            <span className="text-white">Stellar </span>
-            <span className="text-cyan-400">Point</span>
-          </h1>
+          <Link to="/" className="inline-block hover:opacity-80 transition-opacity">
+            <h1 className="text-4xl font-bold">
+              <span className="text-white">Stellar </span>
+              <span className="text-cyan-400">Point</span>
+            </h1>
+          </Link>
         </div>
 
         <div className="space-y-6">
