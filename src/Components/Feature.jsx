@@ -16,7 +16,7 @@ export const Feature = () => {
           {/* Heading */}
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 px-4">
             <span className="text-gray-300">Designed for safety. </span>
-            <span className="text-cyan-400">Built for everyone.</span>
+            <span className="text-teal-400">Built for everyone.</span>
           </h2>
 
           {/* Feature Cards Grid */}
@@ -27,7 +27,7 @@ export const Feature = () => {
                 <img src={feat1} alt="Security Chart" className="w-full h-full object-contain" />
               </div>
               <h3 className="text-xl md:text-2xl font-bold mb-3 text-center md:text-left">
-                <span className="text-cyan-400">Military-grade</span>
+                <span className="text-teal-400">Military-grade</span>
                 <span className="text-white"> Security</span>
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed text-center md:text-left px-2 md:px-0">
@@ -41,7 +41,7 @@ export const Feature = () => {
                 <img src={feat2} alt="Crypto Exchange" className="w-full h-full object-contain" />
               </div>
               <h3 className="text-xl md:text-2xl font-bold mb-3 text-center md:text-left">
-                <span className="text-cyan-400">Lightning-Fast</span>
+                <span className="text-teal-400">Lightning-Fast</span>
                 <span className="text-white"> Transactions</span>
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed text-center md:text-left px-2 md:px-0">
@@ -55,7 +55,7 @@ export const Feature = () => {
                 <img src={feat3} alt="Investment Chart" className="w-full h-full object-contain" />
               </div>
               <h3 className="text-xl md:text-2xl font-bold mb-3 text-center md:text-left">
-                <span className="text-cyan-400">Intelligent</span>
+                <span className="text-teal-400">Intelligent</span>
                 <span className="text-white"> Investment Tools</span>
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed text-center md:text-left px-2 md:px-0">
@@ -72,7 +72,7 @@ export const Feature = () => {
             <div className="text-center lg:text-left">
               <h2 className="text-2xl md:text-4xl font-bold mb-6 px-2">
                 <span className="text-white">Your next step into smarter </span>
-                <span className="text-cyan-400">financial innovation.</span>
+                <span className="text-teal-400">financial innovation.</span>
               </h2>
               <p className="text-gray-400 text-sm md:text-base leading-relaxed px-4 lg:px-0">
                 Stay ahead of the market with real-time analytics, advanced trading tools, and automated strategies designed to maximize your digital asset growth.

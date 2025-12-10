@@ -20,7 +20,7 @@ export const Header = () => {
             {/* Logo */}
             <div className="text-xl sm:text-2xl font-bold">
               <span className="text-white">Stellar</span>
-              <span className="text-cyan-400"> Point</span>
+              <span className="text-teal-400"> Point</span>
             </div>
 
             {/* Desktop Menu Items */}
@@ -40,7 +40,7 @@ export const Header = () => {
                 <Bell className="w-5 h-5 text-gray-300" />
               </button>
               <Link to="/signup">
-                <button className="px-6 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition font-medium">
+                <button className="px-6 py-2 bg-teal-500 text-white rounded-lg hover:bg-cyan-600 transition font-medium">
                   Sign up
                 </button>
               </Link>
@@ -87,7 +87,7 @@ export const Header = () => {
               
               <div className="px-4 py-2 space-y-2">
                 <Link to="/signup" className="block">
-                  <button className="w-full px-4 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition font-medium text-sm">
+                  <button className="w-full px-4 py-2 bg-teal-400 text-white rounded-lg hover:bg-cyan-600 transition font-medium text-sm">
                     Sign up
                   </button>
                 </Link>
@@ -107,9 +107,9 @@ export const Header = () => {
         <div className="max-w-2xl mx-auto text-center">
           {/* Main Headline */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4 sm:mb-6">
-            Take <span className="text-cyan-400">control</span> of the <span className="text-cyan-400">crypto</span> market.
+            Take <span className="text-teal-400">control</span> of the <span className="text-teal-400">crypto</span> market.
             <br />
-            Build unstoppable <span className="text-cyan-400">wealth</span>.
+            Build unstoppable <span className="text-teal-400">wealth</span>.
           </h1>
 
           {/* Subheadline */}
@@ -129,7 +129,7 @@ export const Header = () => {
 
           {/* CTA Button */}
           <Link to="/get-started">
-            <button className="px-6 sm:px-8 py-3 sm:py-4 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition font-medium text-sm sm:text-base lg:text-lg mt-6 sm:mt-8">
+            <button className="px-6 sm:px-8 py-3 sm:py-4 bg-teal-400 text-white rounded-lg hover:bg-cyan-600 transition font-medium text-sm sm:text-base lg:text-lg mt-6 sm:mt-8">
               Get Started
             </button>
           </Link>

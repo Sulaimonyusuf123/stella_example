@@ -71,7 +71,7 @@ export const Market = () => {
         
         {/* Title Section */}
         <div className='flex items-center justify-center md:justify-start gap-3 mb-8'>
-          <h1 className="text-3xl md:text-4xl font-bold text-cyan-400">Market</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-teal-400">Market</h1>
           <h1 className='text-3xl md:text-4xl font-bold text-white'>Trend</h1>
         </div>
         
@@ -112,7 +112,7 @@ export const Market = () => {
                       <img src={crypto.chart} alt="chart" className="h-12 w-32 object-contain" />
                     </td>
                     <td className="p-3 md:p-6">
-                      <button className="text-cyan-500 hover:text-cyan-600 font-medium transition-colors text-xs md:text-base">
+                      <button className="text-teal-400 hover:text-cyan-600 font-medium transition-colors text-xs md:text-base">
                         Trade
                       </button>
                     </td>

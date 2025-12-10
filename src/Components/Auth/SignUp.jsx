@@ -71,20 +71,20 @@ const SignUpForm = ({ onSignupComplete }) => {
           <Link to="/" className="inline-block hover:opacity-80 transition-opacity">
             <h1 className="text-4xl font-bold">
               <span className="text-white">Stellar </span>
-              <span className="text-cyan-400">Point</span>
+              <span className="text-teal-400">Point</span>
             </h1>
           </Link>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Toggle Tabs */}
-          <div className="flex items-center bg-slate-900/50 backdrop-blur-sm border-2 border-cyan-400 rounded-full p-1">
+          <div className="flex items-center bg-slate-900/50 backdrop-blur-sm border-2 border-teal-400 rounded-full p-1">
             <button
               type="button"
               onClick={() => setActiveTab('email')}
               className={`flex-1 py-3 rounded-full font-medium transition-all ${
                 activeTab === 'email'
-                  ? 'bg-cyan-400 text-slate-900'
+                  ? 'bg-teal-400 text-slate-900'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -95,7 +95,7 @@ const SignUpForm = ({ onSignupComplete }) => {
               onClick={() => setActiveTab('phone')}
               className={`flex-1 py-3 rounded-full font-medium transition-all ${
                 activeTab === 'phone'
-                  ? 'bg-cyan-400 text-slate-900'
+                  ? 'bg-teal-400 text-slate-900'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -112,7 +112,7 @@ const SignUpForm = ({ onSignupComplete }) => {
                 value={formData.email}
                 onChange={handleInputChange}
                 placeholder="Email Address"
-                className="w-full px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition-colors"
+                className="w-full px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-teal-400 transition-colors"
               />
             </div>
           )}
@@ -122,7 +122,7 @@ const SignUpForm = ({ onSignupComplete }) => {
             <div className="flex gap-2">
               <button
                 type="button"
-                className="flex items-center gap-2 px-4 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white hover:border-cyan-400 transition-colors"
+                className="flex items-center gap-2 px-4 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white hover:border-teal-400 transition-colors"
               >
                 <span className="text-xl">🇺🇸</span>
                 <span>+1</span>
@@ -134,7 +134,7 @@ const SignUpForm = ({ onSignupComplete }) => {
                 value={formData.phone}
                 onChange={handleInputChange}
                 placeholder="Phone Number"
-                className="flex-1 px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition-colors"
+                className="flex-1 px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-teal-400 transition-colors"
               />
             </div>
           )}
@@ -147,7 +147,7 @@ const SignUpForm = ({ onSignupComplete }) => {
               value={formData.password}
               onChange={handleInputChange}
               placeholder="Password"
-              className="w-full px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition-colors pr-12"
+              className="w-full px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-teal-400 transition-colors pr-12"
             />
             <button
               type="button"
@@ -175,7 +175,7 @@ const SignUpForm = ({ onSignupComplete }) => {
                 value={formData.referralCode}
                 onChange={handleInputChange}
                 placeholder="Enter referral code (optional)"
-                className="w-full px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition-colors"
+                className="w-full px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-teal-400 transition-colors"
               />
             )}
           </div>
@@ -187,7 +187,7 @@ const SignUpForm = ({ onSignupComplete }) => {
               name="agreeToTerms"
               checked={formData.agreeToTerms}
               onChange={handleInputChange}
-              className="mt-1 w-4 h-4 rounded border-slate-700 bg-slate-800/50 text-cyan-400 focus:ring-cyan-400 focus:ring-offset-0"
+              className="mt-1 w-4 h-4 rounded border-slate-700 bg-slate-800/50 text-cyan-400 focus:ring-teal-400 focus:ring-offset-0"
             />
             <label className="text-sm text-gray-400">
               By creating an account, I agree to Stellar Terms and Privacy Policy
@@ -197,7 +197,7 @@ const SignUpForm = ({ onSignupComplete }) => {
           {/* Sign Up Button */}
           <button
             type="submit"
-            className="w-full py-4 bg-cyan-400 text-slate-900 rounded-full font-semibold hover:bg-cyan-500 transition-colors"
+            className="w-full py-4 bg-teal-400 text-slate-900 rounded-full font-semibold hover:bg-teal-500 transition-colors"
           >
             Sign Up to your account
           </button>
@@ -273,7 +273,7 @@ const EmailVerification = ({ email, onBack }) => {
         {/* Back button */}
         <button 
           onClick={onBack}
-          className="absolute -top-16 left-0 text-cyan-400 hover:text-cyan-300 transition-colors flex items-center gap-2"
+          className="absolute -top-16 left-0 text-teal-400 hover:text-cyan-300 transition-colors flex items-center gap-2"
         >
           <ChevronLeft className="w-6 h-6" />
           <span>Back</span>
@@ -283,7 +283,7 @@ const EmailVerification = ({ email, onBack }) => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold">
             <span className="text-white">Stellar </span>
-            <span className="text-cyan-400">Point</span>
+            <span className="text-teal-400">Point</span>
           </h1>
         </div>
 
@@ -293,7 +293,7 @@ const EmailVerification = ({ email, onBack }) => {
           </h2>
           <p className="text-gray-400 text-sm">
             Please enter the verification code sent to{' '}
-            <span className="text-cyan-400">{email}</span>
+            <span className="text-teal-400">{email}</span>
             <button 
               onClick={onBack}
               className="inline-block ml-2 text-cyan-400 hover:text-cyan-300"
@@ -314,14 +314,14 @@ const EmailVerification = ({ email, onBack }) => {
               value={digit}
               onChange={(e) => handleChange(index, e.target.value)}
               onKeyDown={(e) => handleKeyDown(index, e)}
-              className="w-14 h-14 bg-slate-800/50 border border-slate-700 rounded-2xl text-white text-center text-xl font-semibold focus:outline-none focus:border-cyan-400 transition-colors"
+              className="w-14 h-14 bg-slate-800/50 border border-slate-700 rounded-2xl text-white text-center text-xl font-semibold focus:outline-none focus:border-teal-400 transition-colors"
             />
           ))}
         </div>
 
         {/* Resend section */}
         <div className="flex justify-between items-center text-sm mb-8">
-          <button className="text-cyan-400 hover:text-cyan-300 transition-colors">
+          <button className="text-teal-400 hover:text-cyan-300 transition-colors">
             Didn't receive email?
           </button>
           <div className="text-gray-400">
@@ -331,7 +331,7 @@ const EmailVerification = ({ email, onBack }) => {
             <button 
               onClick={handleResend}
               disabled={timer > 0}
-              className={`${timer > 0 ? 'text-gray-600 cursor-not-allowed' : 'text-cyan-400 hover:text-cyan-300'} transition-colors`}
+              className={`${timer > 0 ? 'text-gray-600 cursor-not-allowed' : 'text-teal-400 hover:text-teal-300'} transition-colors`}
             >
               Resend
             </button>
@@ -341,7 +341,7 @@ const EmailVerification = ({ email, onBack }) => {
         {/* Verify Button */}
         <button
           onClick={() => console.log('Verification code:', code.join(''))}
-          className="w-full py-4 bg-cyan-400 text-slate-900 rounded-full font-semibold hover:bg-cyan-500 transition-colors"
+          className="w-full py-4 bg-teal-400 text-slate-900 rounded-full font-semibold hover:bg-teal-500 transition-colors"
         >
           Verify Email
         </button>

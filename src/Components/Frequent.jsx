@@ -36,7 +36,7 @@ export const Frequent = () => {
       {/* Container matching Header's max-w-7xl */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center md:text-left">
-          Frequently Asked <span className="text-cyan-400">Questions</span>
+          Frequently Asked <span className="text-teal-400">Questions</span>
         </h2>
 
         <div className="space-y-6 flex flex-col items-center md:items-stretch">
@@ -45,7 +45,7 @@ export const Frequent = () => {
               key={index}
               className={`rounded-2xl transition-all duration-300 w-full md:w-[95%] ${
                 openIndex === index
-                  ? 'bg-[#1a1a1a] border-2 border-cyan-400'
+                  ? 'bg-[#1a1a1a] border-2 border-teal-400'
                   : 'bg-[#1a1a1a] border-2 border-transparent'
               } ${
                 index % 2 === 0 ? 'md:mr-0 md:ml-auto' : 'md:ml-0 md:mr-auto'

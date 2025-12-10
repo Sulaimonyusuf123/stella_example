@@ -43,19 +43,19 @@ export default function Login() {
           <Link to="/" className="inline-block hover:opacity-80 transition-opacity">
             <h1 className="text-4xl font-bold">
               <span className="text-white">Stellar </span>
-              <span className="text-cyan-400">Point</span>
+              <span className="text-teal-400">Point</span>
             </h1>
           </Link>
         </div>
 
         <div className="space-y-6">
           {/* Toggle Tabs */}
-          <div className="flex items-center bg-slate-900/50 backdrop-blur-sm border-2 border-cyan-400 rounded-full p-1">
+          <div className="flex items-center bg-slate-900/50 backdrop-blur-sm border-2 border-teal-400 rounded-full p-1">
             <button
               onClick={() => setActiveTab('email')}
               className={`flex-1 py-3 rounded-full font-medium transition-all ${
                 activeTab === 'email'
-                  ? 'bg-cyan-400 text-slate-900'
+                  ? 'bg-teal-400 text-slate-900'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -65,7 +65,7 @@ export default function Login() {
               onClick={() => setActiveTab('phone')}
               className={`flex-1 py-3 rounded-full font-medium transition-all ${
                 activeTab === 'phone'
-                  ? 'bg-cyan-400 text-slate-900'
+                  ? 'bg-teal-400 text-slate-900'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -82,7 +82,7 @@ export default function Login() {
                 value={formData.email}
                 onChange={handleInputChange}
                 placeholder="Email Address"
-                className="w-full px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition-colors"
+                className="w-full px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-teal-400 transition-colors"
               />
             </div>
           )}
@@ -91,7 +91,7 @@ export default function Login() {
           {activeTab === 'phone' && (
             <div className="flex gap-2">
               <button
-                className="flex items-center gap-2 px-4 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white hover:border-cyan-400 transition-colors"
+                className="flex items-center gap-2 px-4 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white hover:border-teal-400 transition-colors"
               >
                 <span className="text-xl">🇺🇸</span>
                 <span>+1</span>
@@ -103,7 +103,7 @@ export default function Login() {
                 value={formData.phone}
                 onChange={handleInputChange}
                 placeholder="Phone Number"
-                className="flex-1 px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition-colors"
+                className="flex-1 px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-teal-400 transition-colors"
               />
             </div>
           )}
@@ -116,7 +116,7 @@ export default function Login() {
               value={formData.password}
               onChange={handleInputChange}
               placeholder="Password"
-              className="w-full px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition-colors pr-12"
+              className="w-full px-6 py-4 bg-slate-800/50 border border-slate-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-teal-400 transition-colors pr-12"
             />
             <button
               onClick={() => setShowPassword(!showPassword)}
@@ -129,7 +129,7 @@ export default function Login() {
           {/* Login Button */}
           <button
             onClick={handleSubmit}
-            className="w-full py-4 bg-cyan-400 text-slate-900 rounded-full font-semibold hover:bg-cyan-500 transition-colors"
+            className="w-full py-4 bg-teal-400 text-slate-900 rounded-full font-semibold hover:bg-teal-500 transition-colors"
           >
             Login to your account
           </button>
