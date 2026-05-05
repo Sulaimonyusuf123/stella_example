@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import { Eye, EyeOff, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+import { useNavigate } from 'react-router-dom';
+
 export default function Login() {
   const [activeTab, setActiveTab] = useState('email');
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
     phone: '',
@@ -19,9 +22,12 @@ export default function Login() {
     }));
   };
 
-  const handleSubmit = () => {
-    console.log('Login submitted:', formData);
-  };
+  
+
+const handleSubmit = () => {
+  console.log('Login submitted:', formData);
+  navigate('/dashboard');
+};
 
   const handleGoogleSignIn = () => {
     console.log('Google sign-in initiated');
