@@ -2,7 +2,7 @@ import React from 'react';
 import feat1 from "../Components/Images/four.png"
 import feat2 from "../Components/Images/Graph.png"
 import feat3 from "../Components/Images/illustration.png"
-import feat4 from "../Components/Images/social.png"
+import feat4 from "../Components/Images/Social.png"
 
 
 

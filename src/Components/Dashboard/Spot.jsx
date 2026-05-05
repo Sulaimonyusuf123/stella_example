@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Search, ChevronDown, ChevronRight, Maximize2, Info } from 'lucide-react';
 import { ComposedChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts';
-import bit from "../Images/crypto.png"
+import bit from "../Images/Crypto.png"
 
 const cryptoData = [
   { symbol: 'BTC', name: 'Bitcoin', price: '90,990.4231', change: '+86.5', color: '#F7931A', isPositive: true },
