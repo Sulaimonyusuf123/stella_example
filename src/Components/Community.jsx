@@ -1,12 +1,12 @@
 import React from 'react'
 import card1 from '../Components/Images/Top.png'
-import card2 from '../components/Images/406.png'
+import card2 from '../components/Images/one.png'
 import card3 from '../Components/Images/bottom.png'
 import card4 from '../Components/Images/Card4.png'
 import card5 from '../Components/Images/Card5.png'
-import card6 from '../Components/Images/407.png'
-import card7 from '../Components/Images/408.png'
-import card8 from '../Components/Images/409.png'
+import card6 from '../Components/Images/two.png'
+import card7 from '../Components/Images/three.png'
+import card8 from '../Components/Images/five.png'
 
 export const Community = () => {
   return (
